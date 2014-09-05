@@ -9,5 +9,5 @@ A small database-driven app, "Recall" for taking notes/making a to-do list.
 Uses:
 
 * Sinatra
-* Datamapper
+* DataMapper
 * Sqlite
