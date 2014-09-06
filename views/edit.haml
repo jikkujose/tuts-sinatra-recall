@@ -1,0 +1,14 @@
+- if @note
+  %form{method: 'POST', id: 'edit', action: "/#{@note.id}"}
+    %input{type: 'hidden', name: '_method', value: 'PUT'}
+    %textarea{name: 'note[content]'}= escape_html @note.content
+    - if @note.complete
+      %input{type: 'checkbox', name: 'note[complete]', checked:""}
+    - else
+      %input{type: 'checkbox', name: 'note[complete]'}
+    %input{type: 'submit'}
+  %form{method: 'POST', action: "/#{@note.id}"}
+    %input{type: 'hidden', name: "_method", value: "DELETE"}
+    %button{type: 'submit'} Delete
+- else
+  %p No note found!

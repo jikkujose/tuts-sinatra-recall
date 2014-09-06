@@ -1,0 +1,9 @@
+- @notes.each do |note|
+  %article{class: "#{ note.complete ? 'complete' : '' }"}
+    %p
+      = escape_html note.content
+      %span
+        %a{href: "/#{note.id}"} [Edit]
+    %p.links
+      %a{href:"/#{note.id}/complete"} &#8623;
+    %p.meta= note.created_at

@@ -1,0 +1,5 @@
+%section#add
+  %form{method: 'POST', action: '/'}
+    %textarea{name: 'content', placeholder: 'Task'}
+    %input{type: 'submit', value: 'Add Task'}
+= haml :_list

@@ -1,0 +1,18 @@
+!!!5
+%html
+  %head
+    %meta{charset: 'UTF8'}
+    %title= @title
+    %link{rel: 'stylesheet', href: 'css/reset.css'}
+    %link{rel: 'stylesheet', href: 'css/style.css'}
+    %link{rel: 'alternate', href: '/rss.xml', type: 'application/rss+xml'}
+  %body
+    %header
+      %hgroup
+        %h1
+          %a{href:'/'} Recall
+        %h2 Simple task management system
+    #main= yield
+    %footer
+      %p
+        %small An App for simple tasks.

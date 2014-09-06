@@ -1,0 +1,5 @@
+gem 'sinatra'
+gem 'data_mapper'
+gem 'haml'
+gem 'dm-sqlite-adapter'
+gem 'builder'
